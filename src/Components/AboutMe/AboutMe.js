@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MyJourney from "./MyJourney";
 import MyTechnologies from "./MyTechnologies";
-import Timeline from "./Timeline";
+
 
 const AboutMe = ({ shouldFade }) => {
   const [fadeIn, setFadeIn] = useState(shouldFade)

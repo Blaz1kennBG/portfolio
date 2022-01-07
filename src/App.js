@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import {useNavigate, Router} from "react-router-dom"
 import './App.css';
 import AboutMeHOC from './Components/AboutMe/AboutMeHOC';
 import AboutPortfolioHOC from './Components/AboutPortfolio/AboutPortfolioHOC';

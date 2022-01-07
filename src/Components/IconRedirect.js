@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react"
-import { useEffect } from "react"
+
 
 
 const IconRedirect = () => {

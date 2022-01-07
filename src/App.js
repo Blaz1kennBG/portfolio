@@ -1,11 +1,13 @@
 
 import { useState } from 'react';
+import {useNavigate, Router} from "react-router-dom"
 import './App.css';
 import AboutMeHOC from './Components/AboutMe/AboutMeHOC';
 import AboutPortfolioHOC from './Components/AboutPortfolio/AboutPortfolioHOC';
+import IconRedirect from './Components/IconRedirect';
 
 function App() {
-
+ 
   const [showAboutMe, setShowAboutMe] = useState(false)
   const [showAboutPortfolio, setShowAboutPortfolio] = useState(false)
 
@@ -25,6 +27,7 @@ function App() {
   }
 
   return (
+  
     <div className="App">
 
       <div className="
@@ -38,7 +41,7 @@ function App() {
         text-2xl
         text-slate-50	
         tracking-wide
-        hover:tracking-widest
+        py-10
         hover:text-3xl
         transition-all
         duration-500
@@ -48,7 +51,13 @@ function App() {
         font-color-white  
         color-white
        
-        ">Mariyan Brigov
+        ">
+          
+          <p className="inline">Mariyan Brigov  <IconRedirect />
+          <span className="text-gray-600 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
+         
+</p>
+        
         </div>
 
 
@@ -127,7 +136,7 @@ function App() {
         <AboutPortfolioHOC isMounted={showAboutPortfolio} />
       </div>
     </div>
-
+    
 
   );
 }

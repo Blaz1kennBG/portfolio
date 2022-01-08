@@ -5,4 +5,19 @@
 body {
    background-color:rgb(18, 15, 15);
    font-family: 'Spline Sans', sans-serif;
+
 }
+.fade-anim img {
+   animation: fadeAnim 0.5s ease-out;
+ }
+ @keyframes fadeAnim {
+   from {
+     opacity: 0;
+     transform: translateY(-10px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0)
+   }
+ }
+ 

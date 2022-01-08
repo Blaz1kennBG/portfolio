@@ -1,26 +1,37 @@
 
 import { useState } from 'react';
 import './App.css';
+import "./snow.scss"
 import AboutMeHOC from './Components/AboutMe/AboutMeHOC';
 import AboutPortfolioHOC from './Components/AboutPortfolio/AboutPortfolioHOC';
 import IconRedirect from './Components/IconRedirect';
+import BackgroundSnow from './Components/BackgroundSnow/BackgroundSnow';
+import MyProjectsHOC from './Components/MyProjects/MyProjectsHOC';
 
 function App() {
  
   const [showAboutMe, setShowAboutMe] = useState(false)
   const [showAboutPortfolio, setShowAboutPortfolio] = useState(false)
-
+  const [showMyProjects, setShowMyProjects] = useState(false)
 
   const handleEvents = (type) => {
     if (type === "aboutme") {
    
       setShowAboutMe(!showAboutMe)
+      setShowMyProjects(false)
       setShowAboutPortfolio(false)
       return
     }
     if (type === "aboutportfolio") {
       setShowAboutPortfolio(!showAboutPortfolio)
+      setShowMyProjects(false)
       setShowAboutMe(false)
+      return
+    }
+    if (type === "myprojects") {
+      setShowAboutPortfolio(false)
+      setShowAboutMe(false)
+      setShowMyProjects(!showMyProjects)
       return
     }
   }
@@ -28,7 +39,7 @@ function App() {
   return (
   
     <div className="App">
-
+   
       <div className="
         container 
         h-screen
@@ -51,11 +62,10 @@ function App() {
         color-white
        
         ">
-          
+          <BackgroundSnow />
           <p className="inline">Mariyan Brigov  <IconRedirect />
           <span className="text-gray-600 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
-         
-</p>
+         </p>
         
         </div>
 
@@ -128,11 +138,13 @@ function App() {
     duration-700
     transition-all
 
-    " >My Projects
+    " onClick={() => handleEvents("myprojects")}>My Projects
           </button>
         </div>
         <AboutMeHOC isMounted={showAboutMe} />
         <AboutPortfolioHOC isMounted={showAboutPortfolio} />
+        <MyProjectsHOC isMounted={showMyProjects} />
+         
       </div>
     </div>
     

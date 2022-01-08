@@ -16,7 +16,7 @@ const MyTechnologies = () => {
           <Icon icon="logos:react" className="text-5xl" />
           <h1 className="font-extrabold text-4xl my-3">Front-End</h1>
           <p className="text-gray-400 leading-snug text-xl">
-            Experience with React.js
+           5 Months experience with React.js
           </p>
         </div>
         <div className="my-20 mr-5
@@ -28,7 +28,7 @@ const MyTechnologies = () => {
           <Icon icon="logos:express" className="text-5xl" />
           <h1 className="font-extrabold text-4xl my-3">Back-End</h1>
           <p className="text-gray-400 leading-snug text-xl">
-            Experience with ExpressJS
+            6 Months experience with ExpressJS
           </p>
         </div>
            <div className="my-20 mr-5
@@ -40,7 +40,7 @@ const MyTechnologies = () => {
           <Icon icon="vscode-icons:file-type-mongo" className="text-5xl" />
           <h1 className="font-extrabold text-4xl my-3">Data Base</h1>
           <p className="text-gray-400 leading-snug text-xl">
-            Experience with MongoDB
+          6 Months experience with MongoDB
           </p>
         </div>
         </div>

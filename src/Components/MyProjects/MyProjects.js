@@ -8,7 +8,7 @@ const MyProjects = ({shouldFade, project}) => {
         const [fadeIn, setFadeIn] = useState(shouldFade)
 
         useEffect(() => {
-            console.log(project)
+            
           setFadeIn(shouldFade)
         }, [shouldFade])
        

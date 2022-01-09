@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Icon} from "@iconify/react"
-import Carousel from "../Carousel";
 
 
 const MyProjects = ({shouldFade, project}) => {

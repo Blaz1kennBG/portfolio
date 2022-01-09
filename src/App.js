@@ -67,7 +67,7 @@ function App() {
 
           </div>
           <p className="inline">Mariyan Brigov  <IconRedirect />
-          <span className="text-gray-600 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
+          <span className="text-gray-400 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
          </p>
         
         </div>

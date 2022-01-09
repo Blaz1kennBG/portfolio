@@ -43,8 +43,8 @@ function App() {
       <div className="
         container 
         h-screen
-        mx-44
-        mt-16
+        mx-40
+        mt-8
         animate-fade-in-down
         ">
         <div className="
@@ -62,7 +62,10 @@ function App() {
         color-white
        
         ">
+          <div >
           <BackgroundSnow />
+
+          </div>
           <p className="inline">Mariyan Brigov  <IconRedirect />
           <span className="text-gray-600 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
          </p>
@@ -101,6 +104,7 @@ function App() {
     rounded-2xl
     tracking-wider
     hover:tracking-widest
+   
     duration-700
     transition-all
 

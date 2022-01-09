@@ -29,7 +29,7 @@ const MyProjects = ({shouldFade, project}) => {
                 justify-center
                 ` }  >
                   
-                    <h1 className="mx-auto text-3xl mt-5">{project.title}</h1>
+                    <h1 className="mx-auto text-3xl text-center mt-5">{project.title}</h1>
                     <div className="mx-auto">
                     {project.iconData && project.iconData.map((data) =>  <Icon icon={data} className="inline text-3xl mt-5 mx-5 text-red-500"/>)}
                     {project.altTech && project.altTech.map((text) => <span className="mx-2">{text}</span>)}
@@ -40,7 +40,7 @@ const MyProjects = ({shouldFade, project}) => {
                     <button className="mx-auto mt-5" onClick={() => window.open(project.sourceUrl)}>Source code</button>
                     
 
-                    <Carousel />
+                  
         
               </div>
            );

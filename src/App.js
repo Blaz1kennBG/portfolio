@@ -46,6 +46,7 @@ function App() {
         mx-40
         mt-8
         animate-fade-in-down
+        md:32
         ">
         <div className="
         text-2xl

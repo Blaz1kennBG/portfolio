@@ -7,7 +7,7 @@ const MyTechnologies = () => {
         <div className="flex flex-row">
 
       
-        <div className="my-20 mr-10
+        <div className="my-10 mr-10
            w-48
            flex
            flex-1
@@ -19,7 +19,7 @@ const MyTechnologies = () => {
            5 Months experience with React.js
           </p>
         </div>
-        <div className="my-20 mr-5
+        <div className="my-10 mr-5
            w-48
            flex
            flex-1
@@ -31,7 +31,7 @@ const MyTechnologies = () => {
             6 Months experience with ExpressJS
           </p>
         </div>
-           <div className="my-20 mr-5
+           <div className="my-10 mr-5
            w-48
            flex
            flex-1

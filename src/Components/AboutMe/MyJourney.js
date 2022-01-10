@@ -7,7 +7,7 @@ const MyJourney = () => {
         <div className="border-2 border-white w-48 rounded-full mb-4">
 
         </div>
-        <h1 className="font-extrabold text-6xl my-5 flex">My Journey</h1>
+        <h1 className="font-extrabold text-6xl my-2 flex">My Journey</h1>
         <div className="flex flex-row">
 
 

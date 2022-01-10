@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Icon} from "@iconify/react"
+
 import MyTechnologies from "../AboutMe/MyTechnologies";
 const AboutPortfolio = ({shouldFade}) => {
 

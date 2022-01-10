@@ -127,7 +127,7 @@ function App() {
     transition-all
     " 
     onClick={() => handleEvents("aboutportfolio")}
-    >About this portfolio</button>
+    >Technologies</button>
           <button
             className="
     pr-[2em]

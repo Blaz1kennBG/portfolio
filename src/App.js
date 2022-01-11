@@ -13,6 +13,7 @@ function App() {
   const [showAboutMe, setShowAboutMe] = useState(false)
   const [showAboutPortfolio, setShowAboutPortfolio] = useState(false)
   const [showMyProjects, setShowMyProjects] = useState(false)
+  const [snow, setSnow] = useState(false)
 
   const handleEvents = (type) => {
     if (type === "aboutme") {
@@ -43,11 +44,17 @@ function App() {
       <div className="
         container 
         h-screen
-        mx-40
-        mt-8
+        2xl:mx-32 mt-8 
+        xl:mx-20 mt-8 
+        lg:mx-20 mt-4
+        md:mx-10 mt-2 
+        sm:mx-5 mt-2
         animate-fade-in-down
-        md:32
+        
         ">
+     
+          {snow && <BackgroundSnow />}
+        
         <div className="
         text-2xl
         text-slate-50	
@@ -61,14 +68,11 @@ function App() {
         font-bold
         font-color-white  
         color-white
-       
         ">
-          <div >
-          <BackgroundSnow />
-
-          </div>
+        
           <p className="inline">Mariyan Brigov  <IconRedirect />
           <span className="text-gray-400 inline text-sm my-5 mx-5">made with React &amp; Tailwind</span>
+          <span className="float-right text-sm" onClick={() => setSnow(!snow)}>TOGGLE SNOW</span>
          </p>
         
         </div>
@@ -76,18 +80,24 @@ function App() {
 
         <div className="
         w-2/3
-        text-5xl
+        
         text-slate-50	
         tracking-[.12em]
         transition-all
         duration-500
         font-bold
-        
         color-white
-        
         "
-        >Hey, I'm Mariyan.
-          A Front-end developer who loves to code aiming to become Full-Stack developer.
+        >
+          <p className=" 
+        2xl:text-5xl
+        xl:text-5xl
+        lg:text-4xl
+        md:text-3xl
+        sm:text-2xl
+        
+        ">Hey, I'm Mariyan.
+          A Front-end developer who loves to code aiming to become Full-Stack developer.</p>
         </div>
         <div className="
         flex
